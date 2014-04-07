@@ -114,15 +114,77 @@
 			<missionstate id="3" description="You have Complete Dwarven Armor Quest!"/>
 		</mission>
 	</quest>
+	<quest name="Barbarian Test Quest" startstorageid="12022" startstoragevalue="1">
+		<mission name="Barbarian Test 1: Barbarian Booze" storageid="12022" startvalue="1" endvalue="3">
+			<missionstate id="1" description="Give Sven a honeycomb. For each honeycomb you will be allowed 20 sips."/>
+			<missionstate id="2" description="Now drink from the bucket until you drink 10 sips in a row without passing out"/>
+			<missionstate id="3" description="You have Complete this Test!"/>
+		</mission>
+		<mission name="Barbarian Test 2: The Bear Hugging" storageid="12023" startvalue="1" endvalue="3">
+			<missionstate id="1" description="Sven gave you a Mead Horn. Fill it with mead from the bucket behind Sven (brown contents) and then proceed to the sleeping bear. The bear is inside a small ice cave in the north. Use the full mead horn on the bear so it becomes unconscious, then use the bear to hug it."/>
+			<missionstate id="2" description="You hugging the bear! Go tell Sven that you hugged the bear!"/>
+			<missionstate id="3" description="You have Complete this Test!"/>
+		</mission>
+		<mission name="Barbarian Test 3: The Mammoth Pushing" storageid="12024" startvalue="1" endvalue="3">
+			<missionstate id="1" description="Go to the north-west of Svargrond and find the Mammoth. Drink your three mugs of mead, stand in front of the Mammoth and push it. Just use it..."/>
+			<missionstate id="2" description="You pushed the Mammoth! Go tell Sven that you pushed the Mammoth!"/>
+			<missionstate id="3" description="You have Complete this Test! You can now become a citizen of Svargrond!"/>
+		</mission>
+	</quest>
+	<quest name="The Ice Islands Quest" startstorageid="12025" startstoragevalue="1">
+		<mission name="Befriending the Musher" storageid="12025" startvalue="1" endvalue="3">
+			<missionstate id="1" description="Find Sniffler the husky of Iskan. He should be somewhere north west of the town. He is probably marking his territory so you should be able to find his trace. Call him sniffler and feed him with meat."/>
+			<missionstate id="2" description="Tell Iskan that you found and feed Sniffler"/>
+			<missionstate id="3" description="You are now a friend of Iskan and can ask him for a passage to Nibelor. You should ask Hjaern in Nibelor if you can help him."/>
+		</mission>
+		<mission name="Nibelor 1: Breaking the Ice" storageid="12026" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Chakoyas may use the ice for a passage to the west and attack Svargrond. Use the rocks at east of nibelor on at least three of these places and the chakoyas probably won't be able to pass the ice."/>
+			<missionstate id="2" description="You have broke 1 of 3 icepassages"/>
+			<missionstate id="3" description="You have broke 2 of 3 icepassages"/>
+			<missionstate id="4" description="You have broke 3 of 3 icepassages! Tell Hjaern your mission!"/>
+			<missionstate id="5" description="You should ask Silfind if you can help her in some matters."/>
+		</mission>
+		<mission name="Nibelor 2: Ecological Terrorism" storageid="12027" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Siflind will ask you to travel to Port Hope to get ants from an Ant-Hill to perform ecological terrorism on some pirates on Tyrsung."/>
+			<missionstate id="2" description="Work in processing"/>
+		</mission>
+		<mission name="Nibelor 3: Artful Sabotage" storageid="12028" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+		<mission name="Nibelor 4: Berserk Brewery" storageid="12029" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+		<mission name="Nibelor 5: Cure the Dogs" storageid="12030" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+		<mission name="The Secret of Helheim" storageid="12031" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+		<mission name="The Contact" storageid="12032" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+		<mission name="Formorgar Mines 1: The Mission" storageid="12033" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+		<mission name="Formorgar Mines 2: Ghostwhisperer" storageid="12034" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+		<mission name="Formorgar Mines 3: The Secret" storageid="12035" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+		<mission name="Formorgar Mines 4: Retaliation" storageid="12036" startvalue="1" endvalue="5">
+			<missionstate id="1" description="Work in processing"/>
+		</mission>
+	</quest>
 	<quest name="Outfit and Addon Quests" startstorageid="12010" startstoragevalue="1">
-		<mission name="Hunter Outfits Quest" storageid="12055" startvalue="1" endvalue="5">
+		<mission name="Hunter Outfit Quest" storageid="12055" startvalue="1" endvalue="5">
 			<missionstate id="1" description="Elane sends you to Liberty Bay to bring her the Crossbow from the Cult."/>
 			<missionstate id="2" description="Bring Elane 100 pieces of lizard leather and 100 pieces of red dragon leather."/>
 			<missionstate id="3" description="Bring Elane 5 enchanted chicken wings."/>
 			<missionstate id="4" description="Bring Elane one piece of royal steel, draconian steel and hell steel each."/>
 			<missionstate id="5" description="You got the Outfit!"/>
 		</mission>
-		<mission name="Druid Outfits Quest" storageid="1004" startvalue="1" endvalue="10">
+		<mission name="Druid Outfit Quest" storageid="1004" startvalue="1" endvalue="10">
 			<missionstate id="1" description="Ceiron sends you to collect a sample of the blooming Griffinclaw."/>
 			<missionstate id="2" description="Ask Ceiron for task."/>
 			<missionstate id="3" description="take Ceirons waterskin and try to fill it with water from this special trickle. In the mountains between Ankrahmun and Tiquanda are two hydra lairs. It is important that you take the water directly from the trickle, not from the pond"/>
@@ -134,13 +196,29 @@
 			<missionstate id="9" description="Head over to Cormaya, find A Majestic Warwolf's Cave and ask her about an addon."/>
 			<missionstate id="10" description="You got the Outfit!"/>
 		</mission>
-		<mission name="Knight Outfits Quest" storageid="12060" startvalue="1" endvalue="6">
+		<mission name="Knight Outfit Quest" storageid="12060" startvalue="1" endvalue="6">
 			<missionstate id="1" description="First you must collect 100 Behemoth Fangs by looting or Skinning Behemoth's. Bring them to Gregor in Thais."/>
-			<missionstate id="2" description="Gregor sent you to retrieve the helmet of Ramsay the Reckless found in deeper Banuta"/>
+			<missionstate id="2" description="Gregor send you to retrieve the helmet of Ramsay the Reckless found in deeper Banuta"/>
 			<missionstate id="3" description="Bring Gregor a Flask of Warrior's Sweat."/>
 			<missionstate id="4" description="Bring Gregor one piece of royal steel."/>
 			<missionstate id="5" description="Gregor send you to Sam to adorn your helmet."/>
 			<missionstate id="6" description="You got the Outfit!"/>
+		</mission>
+		<mission name="Mage Outfit Quest (Wand)" storageid="12061" startvalue="1" endvalue="6">
+			<missionstate id="1" description="You found Angelina in a Prison. She told you a secret: Lynda in Thais can create a blessed wand. Greet her from Angelina, maybe she will aid you."/>
+			<missionstate id="2" description="Lynda send you to bring her a sample of all five wands and five rods (Snakebite, Moonlight, Necrotic, Terra, Hailstorm, Vortex, Dragonbreath, Decay, Cosmic Energy and Inferno)"/>
+			<missionstate id="3" description="Bring Lynda 10 ounces of magic sulphur"/>
+			<missionstate id="4" description="Bring Lynda the Necromancer's soul stone"/>
+			<missionstate id="5" description="Bring Lynda 20 ankhs now to complete the ritual."/>
+			<missionstate id="6" description="You got the Outfit!"/>
+		</mission>
+		<mission name="Citizen Outfit Quest (Feather Hat)" storageid="12062" startvalue="1" endvalue="2">
+			<missionstate id="1" description="Bring Hanna in Thais 100 chicken feathers, 50 honeycombs and a legion helmet to get the hat"/>
+			<missionstate id="2" description="You got the Outfit!"/>
+		</mission>
+		<mission name="Citizen Outfit Quest (Backpack)" storageid="12063" startvalue="1" endvalue="2">
+			<missionstate id="1" description="Bring Lubo in northeast of Thais 100 minotaur leather to get the Backpack"/>
+			<missionstate id="2" description="You got the Outfit!"/>
 		</mission>
 	</quest>
 	<quest name="In Service of Yalahar" startstorageid="30" startstoragevalue="4">
@@ -185,7 +263,7 @@
 		<mission name="Mission 05: Food or Fight" storageid="12016" startvalue="1" endvalue="8">
 			<missionstate id="1" description="Ask Palimuth for mission."/>
 			<missionstate id="2" description="On this mission you are asked to find a druid by the name of Tamerin, on the Arena Quarter. You now have permission to use the gates mechanism."/>
-			<missionstate id="3" description="The first is to bring Tamerin a flask of Animal Cure, you can buy this from Siflind on Nibelor."/>
+			<missionstate id="3" description="The first is to bring Tamerin a flask of Animal Cure, you can buy this from Siflind on Nibelor (northeast of Svargrond)."/>
 			<missionstate id="4" description="now you have to kill Morik the Gladiator and bring his helmet to Tamerin as proof."/>
 			<missionstate id="5" description="Report back to Tamerin as he will listen to your request and you can now make your choice: Cattle for Palimuth (good side), Warbeasts for Yalahari (Azerus) (bad side). Then report the one you decided your mission."/>
 			<missionstate id="6" description="You decided to help Palimuth, report him your mission."/>

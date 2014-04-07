@@ -139,13 +139,13 @@ function TradeRequest(cid, npc, table, STORAGE, Fvalue) -- exemple TradeRequest(
 			end
 			if items[item].buyPrice <= player:getMoney() then
 				if inBackpacks then
-					local itembp = doCreateItemEx(1988, 1)
-					local bp = player:addItemEx(itembp)
+					local container = Game.createItem(1988, 1)
+					local bp = player:addItemEx(container)
 					if(bp ~= 1) then
 						return player:sendTextMessage(MESSAGE_STATUS_SMALL, 'You don\'t have enough container.')	
 					end
 					for i = 1, amount do
-						doAddContainerItem(itembp, items[item].itemId, items[item])
+						container:addItem(items[item].itemId, items[item])
 					end
 				else
 					return 
@@ -164,8 +164,8 @@ function TradeRequest(cid, npc, table, STORAGE, Fvalue) -- exemple TradeRequest(
 		local function onSell(cid, item, subType, amount, ignoreEquipped)
 			if items[item].sellPrice then
 				return
-				player:addMoney(items[item].sellPrice * amount) and
-				player:removeItem(items[item].itemId, amount, 1, ignoreEquipped) and
+				player:removeItem(items[item].itemId, amount, -1, ignoreEquipped) and
+				player:addMoney(items[item].sellPrice * amount)	and
 				player:sendTextMessage(MESSAGE_INFO_DESCR, 'You sold '..amount..'x '..items[item].realName..' for '..items[item].sellPrice * amount..' gold coins.')
 			end
 			return true

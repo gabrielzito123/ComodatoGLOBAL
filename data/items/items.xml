@@ -6788,7 +6788,9 @@
 		<attribute key="type" value="door" />
 	</item>
 	<item fromid="3569" toid="3574" article="a" name="waterfall" />
-	<item id="3587" article="a" name="small boat" />
+	<item id="3587" article="a" name="small boat">
+		<attribute key="type" value="teleport" />
+	</item>
 	<item fromid="3588" toid="3590" article="a" name="small boat">
 		<attribute key="type" value="teleport" />
 	</item>
@@ -8152,6 +8154,7 @@
 	<item fromid="5020" toid="5021" article="a" name="burning skull" />
 	<item id="5022" article="an" name="orichalcum pearl">
 		<attribute key="weight" value="30" />
+		<attribute key="type" value="teleport" />
 	</item>
 	<item fromid="5023" toid="5024" article="a" name="magic forcefield">
 		<attribute key="type" value="teleport" />
@@ -11890,7 +11893,7 @@
 	<item id="7175" article="a" name="bear">
 		<attribute key="description" value="It seems to have fallen into a really deep sleep." />
 		<attribute key="decayTo" value="7174" />
-		<attribute key="duration" value="5" />
+		<attribute key="duration" value="10" />
 	</item>
 	<item id="7176" article="a" name="mammoth">
 		<attribute key="description" value="It is looking at you fiercely." />
@@ -11898,7 +11901,7 @@
 	<item id="7177" article="a" name="mammoth">
 		<attribute key="description" value="It seems to be pretty much knocked out." />
 		<attribute key="decayTo" value="7176" />
-		<attribute key="duration" value="5" />
+		<attribute key="duration" value="10" />
 	</item>
 	<item id="7178" article="a" name="baby seal" />
 	<item fromid="7179" toid="7182" name="" />
@@ -11908,9 +11911,15 @@
 	<item id="7184" article="a" name="baby seal doll">
 		<attribute key="weight" value="850" />
 	</item>
-	<item fromid="7185" toid="7186" article="a" name="small crack in the ice">
+	<item id="7185" article="a" name="small crack in the ice">
 		<attribute key="description" value="This would be a good place to destroy the ice." />
 	</item>
+		<item id="7186" article="a" name="big crack in the ice">
+		<attribute key="description" value="Now the ice passage are destroyed." />
+		<attribute key="decayTo" value="3621" />
+		<attribute key="duration" value="300" />
+	</item>
+
 	<item fromid="7187" toid="7188" article="a" name="raft" />
 	<item id="7189" article="a" name="stone shelf">
 		<attribute key="containerSize" value="6" />
@@ -11927,6 +11936,8 @@
 	<item fromid="7234" toid="7235" article="a" name="shield" />
 	<item id="7236" article="an" name="ice hole">
 		<attribute key="description" value="You can see the movement of fish." />
+		<attribute key="decayTo" value="7200" />
+		<attribute key="duration" value="300" />
 	</item>
 	<item id="7237" article="an" name="ice hole">
 		<attribute key="decayTo" value="7236" />
@@ -25539,7 +25550,7 @@
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
 	</item>
-	<item id="18534" name="stairs">
+	<item fromid="18531" toid="18534" name="stairs">
 		<attribute key="floorchange" value="down" />
 	</item>
 	<item id="18550" article="a" name="noble sword">
