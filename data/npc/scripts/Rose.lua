@@ -17,19 +17,30 @@ function onThink()
 end
 
 function creatureSayCallback(cid, type, msg)
-	if not npcHandler:isFocused(cid) then
+	if(not npcHandler:isFocused(cid)) then
 		return false
 	end
 	local talkUser = NPCHANDLER_CONVBEHAVIOR == CONVERSATION_DEFAULT and 0 or cid
 	
 	local player = Player(cid)
-	if msgcontains(msg, "story") then
-		if player:getStorageValue(12001) == 37 then
-			npcHandler:say({"I was captured and tortured to death by the cultists here. They worship a being that they call Ghazbaran ...",
-							"In his name they have claimed the mines and started to melt the ice to free an army of vile demons that have been frozen here for ages ...",
-							"Their plan is to create a new demon army for their master to conquer the world. Hjaern and the other shamans must learn about it! Hurry before its too late."}, player, 0, 1, 3500)
+	if msgcontains(msg, "Hydra Tongue") then
+		npcHandler:say("Do you want to buy a Hydra Tongue for 100 gold?", player)
+		talkState[talkUser] = 1
+	elseif msgcontains(msg, "yes") then
+		if talkState[talkUser] == 1 then
+			if player:getMoney() >= 100 then
+				player:removeMoney(100)
+				npcHandler:say("Here you are. A Hydra Tongue!", player)
+				player:addItem(7250, 1)
+				talkState[talkUser] = 0
+			else
+				npcHandler:say("You don't have enough money.", player)
+			end
+		end
+	elseif msgcontains(msg, "no") then
+		if talkState[talkUser] == 1 then
+			npcHandler:say("Then not.", player)
 			talkState[talkUser] = 0
-			player:setStorageValue(12001, 38)
 		end
 	end
 	return true
