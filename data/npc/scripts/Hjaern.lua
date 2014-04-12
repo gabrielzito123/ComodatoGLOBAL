@@ -57,6 +57,8 @@ function creatureSayCallback(cid, type, msg)
 							"Report about your mission when you are done. Then we can begin with the great ritual of summoning the children of Chyll ...",
 							"I will also inform Lurik about the events. Now go, fast!"}, player, 0, 1, 3500)
 			player:setStorageValue(12001, 39)
+			player:setStorageValue(12035, 2) -- Questlog The Ice Islands Quest, Formorgar Mines 3: The Secret
+			player:setStorageValue(12036, 1) -- Questlog The Ice Islands Quest, Formorgar Mines 4: Retaliation
 			player:addItem(7289, 1)
 			talkState[talkUser] = 0
 		elseif player:getStorageValue(12001) == 39 then
@@ -75,6 +77,9 @@ function creatureSayCallback(cid, type, msg)
 								"Take this outfit to keep your warm during your travels in this frozen realm!"}, player, 0, 1, 3500)
 			end
 			talkState[talkUser] = 0
+		else 
+		npcHandler:say("I have now no mission for you.", player)
+		talkState[talkUser] = 0
 		end
 	elseif msgcontains(msg, "shard") then
 		if player:getStorageValue(12001) == 40 then
@@ -100,22 +105,25 @@ function creatureSayCallback(cid, type, msg)
 			talkState[talkUser] = 4
 		end
 	elseif msgcontains(msg, "tylaf") then
-		if player:getStorageValue(12001) == 37 then
+		if player:getStorageValue(12001) == 36 then
 			npcHandler:say({"You encountered the restless ghost of my apprentice Tylaf in the old mines? We must find out what has happened to him. I enable you to talk to his spirit ...",
 							"Talk to him and then report to me about your mission."}, player, 0, 1, 3500)
-			player:setStorageValue(12001, 38)
+			player:setStorageValue(12001, 37)
+			player:setStorageValue(12034, 1) -- Questlog The Ice Islands Quest, Formorgar Mines 2: Ghostwhisperer
 			talkState[talkUser] = 0
 		end
 	elseif msgcontains(msg, "yes") then
 		if talkState[talkUser] == 1 then
 			npcHandler:say("This is good news. As I explained, travel to Helheim, seek the reason for the unrest there and then report to me about your mission. ", player)
 			player:setStorageValue(12001, 30)
+			player:setStorageValue(12031, 2) -- Questlog The Ice Islands Quest, The Secret of Helheim
 			talkState[talkUser] = 0
 		elseif talkState[talkUser] == 2 then
 			npcHandler:say({"Thank you my friend. The local representative of the explorers society has asked for our help ...",
 							"You know their ways better than my people do and are probably best suited to represent us in this matter.",
 							"Search for Lurik and talk to him about aprobable mission he might have for you. "}, player, 0, 1, 3500)
 			player:setStorageValue(12001, 32)
+			player:setStorageValue(12032, 1) -- Questlog The Ice Islands Quest, The Contact
 			talkState[talkUser] = 0
 		elseif talkState[talkUser] == 3 then
 			if player:getItemCount(7290) >= 5 then
