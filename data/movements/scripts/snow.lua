@@ -1,15 +1,11 @@
 function onStepOut(cid, item, position, fromPosition)
-	local player = Player(cid)
-	if player and player:isInGhostMode() then
-		return true
-	end
-	local snow = Item(item.uid)
+	if isPlayer(cid) and not isPlayerGhost(cid) then
 		if item.itemid == 670 then
-		snow:transform(6594)
+			doTransformItem(item.uid, 6594)
 		else
-		snow:transform(item.itemid + 15)
+			doTransformItem(item.uid, item.itemid + 15)
+		end
+		doDecayItem(item.uid)
 	end
-	snow:decay()
-
 	return true
 end

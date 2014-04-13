@@ -99,14 +99,15 @@ local food = {
 }
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
-	local food = FOODS[item.itemid]
+	local player = Player(cid)
+
+	local food = food[item.itemid]
 	if food == nil then
 		return false
 	end
 
-	local player = Player(cid)
 	local condition = player:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
-	if condition and math.floor(condition:getTicks() / 1000 + food[1]) >= 1200 then
+	if condition ~= nil and math.floor(condition:getTicks() / 1000 + food[1]) >= 1200 then
 		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You are full.")
 	else
 		player:feed(food[1] * 12)

@@ -11958,7 +11958,7 @@
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="7246" name="Nilsor's waterskin">
-		<attribute key="description" value="It is empty." />
+		<attribute key="description" value="It is filled with warm geyser water." />
 		<attribute key="weight" value="700" />
 	</item>
 	<item id="7247" name="fine sulphur">
@@ -12052,7 +12052,7 @@
 		<attribute key="corpseType" value="undead" />
 	</item>
 	<item id="7286" name="Nilsor's waterskin">
-		<attribute key="description" value="It is filled with warm geyser water." />
+		<attribute key="description" value="It is empty." />
 		<attribute key="weight" value="700" />
 	</item>
 	<item fromid="7287" toid="7288" name="" />
