@@ -23,6 +23,12 @@ function onSay(cid, words, param)
 			for i = 1, #firstItemsknight do
 				player:addItem(firstItemsknight[i], 1)
 			end
+			
+		elseif player:getVocation():getId() == 0 then
+			
+			for i = 1, #firstItemsknight do
+				player:addItem(firstItemsknight[i], 1)
+			end
 		
 		else player:getVocation():getId() == 4 then
 			
