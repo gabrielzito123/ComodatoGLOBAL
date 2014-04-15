@@ -6,6 +6,5 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 		Game.createItem(2694, 1, toPosition)
 		return true
 	end
-
 	return destroyItem(cid, itemEx, toPosition)
 end

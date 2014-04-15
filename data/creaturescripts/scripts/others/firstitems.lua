@@ -1,45 +1,14 @@
-local firstItemssorc =	 {1988, 8819, 8820, 2643, 2175, 2190}
-local firstItemsdruid =	 {1988, 8819, 8820, 2643, 2175, 2182}
-local firstItemsknight = {1988, 2457, 2463, 2525, 2647, 2394, 2383, 2428}
-local firstItemspala = 	 {1988, 2457, 2463, 2525, 2647}
+local firstItems = {2050, 2382}
 
 function onLogin(cid)
 	local player = Player(cid)
 	if player:getLastLoginSaved() <= 0 then
-	
-		if player:getVocation():getId() == 1 then
-		
-			for i = 1, #firstItemssorc do
-				player:addItem(firstItemssorc[i], 1)
-			end
-			
-		elseif player:getVocation():getId() == 2 then
-			
-			for i = 1, #firstItemsdruid do
-				player:addItem(firstItemsdruid[i], 1)
-			end
-		
-		elseif player:getVocation():getId() == 4 then
-			
-			for i = 1, #firstItemsknight do
-				player:addItem(firstItemsknight[i], 1)
-			end
-			
-		elseif player:getVocation():getId() == 0 then
-			
-			for i = 1, #firstItemsknight do
-				player:addItem(firstItemsknight[i], 1)
-			end
-		
-		elseif player:getVocation():getId() == 3 then
-			
-			for i = 1, #firstItemspala do
-				player:addItem(firstItemspala[i], 1)
-				player:addItem(2389, 5)
-			end		
-		
-		
+		for i = 1, #firstItems do
+			player:addItem(firstItems[i], 1)
 		end
+		player:addItem(player:getSex() == 0 and 2651 or 2650, 1)
+		player:addItem(1987, 1)
+		player:addItem(2674, 1)
 	end
 	return true
 end

@@ -1,10 +1,11 @@
 --Pre-made areas
 
 --Waves
-AREA_SHORTWAVE3 = {
-{1, 1, 1},
-{1, 1, 1},
-{0, 3, 0}
+AREA_WAVESICE = {
+{0, 0, 0, 0, 0},
+{0, 1, 1, 1, 0},
+{0, 1, 1, 1, 0},
+{0, 0, 3, 0, 0}
 }
 
 AREA_WAVE4 = {
