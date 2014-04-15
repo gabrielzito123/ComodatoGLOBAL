@@ -23,7 +23,7 @@
 	<globalevent type="startup" name="RashidServerStartup" script="others/RashidStartUp.lua"/>
 	
 	<globalevent type="startup" name="ServerStartup" script="startup.lua"/>
-	
+	<globalevent name="Anuncios" interval="3600000" script="anuncios.lua"/>	
 	<globalevent type="record" name="PlayerRecord" script="record.lua"/>
 	<globalevent name="Server Save" time="09:55:00" script="serversave.lua"/>
 	

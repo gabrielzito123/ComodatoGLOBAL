@@ -5,12 +5,14 @@ local function serverSave()
         if shutdownAtServerSave then
                 Game.setGameState(GAME_STATE_SHUTDOWN)
 	else
-		Game.setGameState(GAME_STATE_NORMAL)
-        end
+		Game.setGameState(GAME_STATE_CLOSED)
+
         if cleanMapAtServerSave then
                 cleanMap()
         end
-        saveServer()
+
+		Game.setGameState(GAME_STATE_NORMAL)
+	end
 end
 
 local function secondServerSaveWarning()
