@@ -1,7 +1,7 @@
-local firstItemssorc =	 {2050, 2382}
-local firstItemsdruid =	 {2050, 2382}
-local firstItemsknight = {2050, 2382}
-local firstItemspala = 	 {2050, 2382}
+local firstItemssorc =	 {1988, 8819, 8820, 2643, 2175, 2190}
+local firstItemsdruid =	 {1988, 8819, 8820, 2643, 2175, 2182}
+local firstItemsknight = {1988, 2457, 2463, 2525, 2647, 2394, 2383, 2428}
+local firstItemspala = 	 {1988, 2457, 2463, 2525, 2647}
 
 function onSay(cid, words, param)
 	local player = Player(cid)
@@ -18,7 +18,7 @@ function onSay(cid, words, param)
 				player:addItem(firstItemsdruid[i], 1)
 			end
 		
-		elseif player:getVocation():getId() == 3 then
+		elseif player:getVocation():getId() == 4 then
 			
 			for i = 1, #firstItemsknight do
 				player:addItem(firstItemsknight[i], 1)
@@ -30,10 +30,11 @@ function onSay(cid, words, param)
 				player:addItem(firstItemsknight[i], 1)
 			end
 		
-		elseif player:getVocation():getId() == 4 then
+		elseif player:getVocation():getId() == 3 then
 			
 			for i = 1, #firstItemspala do
 				player:addItem(firstItemspala[i], 1)
+				player:addItem(2389, 10)
 			end		
 		
 		
