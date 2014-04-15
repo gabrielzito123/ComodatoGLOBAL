@@ -35,7 +35,7 @@ function onLogin(cid)
 			
 			for i = 1, #firstItemspala do
 				player:addItem(firstItemspala[i], 1)
-				player:addItem(2389, 10)
+				player:addItem(2389, 5)
 			end		
 		
 		
