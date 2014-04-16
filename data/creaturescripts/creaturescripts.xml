@@ -36,8 +36,11 @@
 	<!-- Others -->
 	<event type="login" name="PlayerLogin" script="others/login.lua"/>
 	<event type="death" name="PlayerDeath" script="others/playerdeath.lua"/>
-<!--
+
 <event type="modalwindow" name="ModalRank" script="modal/rank.lua"/>
+
+<!--
+
 
 <event type="think" name="MapMark" script="mapmark.lua"/>
  -->
