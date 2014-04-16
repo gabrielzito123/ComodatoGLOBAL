@@ -58,4 +58,23 @@
 	<talkaction words="!z" separator=" " script="magiceffect.lua"/>
 	<talkaction words="!x" separator=" " script="animationeffect.lua"/>
 	<talkaction words="!first" script="firstitems.lua"/>
+
+<!-- Others 
+	<talkaction log="yes" words="/bug" separator=" " script="bugs.lua" />
+	<talkaction log="yes" words="/p" separator=" " script="playercheck.lua" />
+	
+	<talkaction log="yes" words="/ta" separator=" " script="createitemall.lua" />
+	<talkaction log="yes" words="/tp" acctype="4" script="tp.lua" />
+	<talkaction log="yes" words="/e" separator=" " acctype="4" script="event.lua" />
+	<talkaction log="yes" words="/prender" separator=" " script="prisao.lua" />
+	<talkaction log="yes" words="/desprender" separator=" " script="prisao.lua" />
+	
+	<talkaction words="/staffrules" separator=" " script="staffrules.lua" />
+	
+	<talkaction words="!news" separator=" " script="notice.lua" />
+	<talkaction words="!rules" separator=" " script="rules.lua" />
+	<talkaction words="!bugreport" separator=" " script="bugreport.lua" />
+	<talkaction words="!rank" script="rank.lua" />
+	<talkaction words="!removeskull" script="removeskull.lua" />
+-->
 </talkactions>
