@@ -1,0 +1,6 @@
+Git Command
+git branch -D
+remove a local branche
+
+git merge upstream/master
+para resolver conflitos
