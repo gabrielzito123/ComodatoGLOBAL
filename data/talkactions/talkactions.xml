@@ -57,8 +57,14 @@
 	<!-- test talkactions -->
 	<talkaction words="!z" separator=" " script="magiceffect.lua"/>
 	<talkaction words="!x" separator=" " script="animationeffect.lua"/>
+	
+	
+	
+	<!-- COMODATO -->
 	<talkaction words="!first" script="firstitems.lua"/>
-
+	<talkaction words="!shop" script="znoteshop.lua"/>
+	
+	
 <!-- Others 
 	<talkaction log="yes" words="/bug" separator=" " script="bugs.lua" />
 	<talkaction log="yes" words="/p" separator=" " script="playercheck.lua" />
