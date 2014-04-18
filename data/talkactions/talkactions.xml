@@ -68,6 +68,7 @@
 	<talkaction log="yes" words="/p" separator=" " script="playercheck.lua" />
 	<talkaction log="yes" words="/tp" acctype="4" script="tp.lua" />
 	<talkaction words="!removeskull" script="removeskull.lua" />
+	<talkaction words="!bug" separator=" " script="adminreport.lua" />
 	
 <!-- Others 
 	<talkaction log="yes" words="/bug" separator=" " script="bugs.lua" />

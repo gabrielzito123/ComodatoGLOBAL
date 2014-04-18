@@ -222,3 +222,5 @@ lua51.dll
 sqlite.dll
 tfs.exe
 zlib1.dll
+*.exe
+*.dll
