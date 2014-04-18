@@ -224,3 +224,5 @@ tfs.exe
 zlib1.dll
 *.exe
 *.dll
+data/reports/TheMask report.txt
+client_assertions.txt
