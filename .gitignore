@@ -226,3 +226,5 @@ zlib1.dll
 *.dll
 data/reports/TheMask report.txt
 client_assertions.txt
+data/reports/TheMask report.txt
+*.txt
