@@ -1,6 +1,6 @@
 function onStartup()
 	db.query("TRUNCATE TABLE `players_online`")
-	db.query("DELETE FROM `guild_wars` WHERE `status` = 0")
+	db.query("UPDATE `guild_wars` SET `status` = 4, `ended` = " .. os.time() .. " WHERE `status` = 1 AND (`started` + 86400 * 7) < " .. os.time())
 	db.query("DELETE FROM `players` WHERE `deletion` != 0 AND `deletion` < " .. os.time())
 	db.query("DELETE FROM `ip_bans` WHERE `expires_at` != 0 AND `expires_at` <= " .. os.time())
 	db.query("DELETE FROM `market_history` WHERE `inserted` <= " .. (os.time() - configManager.getNumber(configKeys.MARKET_OFFER_DURATION)))
