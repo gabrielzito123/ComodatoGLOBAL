@@ -70,6 +70,7 @@
 	<talkaction words="!removeskull" script="removeskull.lua" />
 	<talkaction words="!bug" separator=" " script="adminreport.lua" />
 	<talkaction words="!war" separator=" " script="war.lua" />
+	<talkaction words="!balance" separator=" " script="balance.lua" />
 	
 <!-- Others 
 	<talkaction log="yes" words="/bug" separator=" " script="bugs.lua" />
