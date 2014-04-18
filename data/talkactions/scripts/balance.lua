@@ -13,7 +13,8 @@ function onSay(cid, words, param)
                 return true
         end
  
-        local t = string.explode(param, ' ', 1)
+        local t = param:split(",")
+		
        
         if(player:getGuildLevel() == GUILDLEVEL_LEADER and isInArray({'pick'}, t[1])) then
                 if(t[1] == 'pick') then

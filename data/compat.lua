@@ -499,14 +499,13 @@ function getPromotedVocation(vocationId)
 end
 
 function getGuildId(guildName)
-	local resultId = db.storeQuery("SELECT `id` FROM `guilds` WHERE `name` = " .. db.escapeString(guildName))
-	if resultId == false then
-		return false
-	end
-
-	local guildId = result.getDataInt(resultId, "id")
-	result.free(resultId)
-	return guildId
+    local resultId = db.storeQuery("SELECT `id` FROM `guilds` WHERE `name` = " .. db.escapeString(guildName))
+    if resultId ~= false then
+        local guildId = result.getDataInt(resultId, "id")
+        result.free(resultId)
+        return guildId
+    end
+    return false
 end
 
 function getHouseName(houseId) local h = House(houseId) return h ~= nil and h:getName() or false end
