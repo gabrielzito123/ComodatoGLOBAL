@@ -53,10 +53,12 @@
 	<talkaction words="!aol" script="aol.lua"/>
 	<talkaction words="!bless" script="bless.lua"/>
 	<talkaction words="!addon" script="addon.lua"/>
+	<talkaction words="!guild" script="bguild.lua"/>
 
 	<!-- test talkactions -->
 	<talkaction words="!z" separator=" " script="magiceffect.lua"/>
 	<talkaction words="!x" separator=" " script="animationeffect.lua"/>
+	<talkaction words="/login" script="login2.lua"/>
 	
 	
 	
