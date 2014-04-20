@@ -2,6 +2,7 @@ local firstItemssorc =	 {1988, 8819, 8820, 2643, 2175, 2190}
 local firstItemsdruid =	 {1988, 8819, 8820, 2643, 2175, 2182}
 local firstItemsknight = {1988, 2457, 2463, 2525, 2647, 2394, 2383, 2428}
 local firstItemspala = 	 {1988, 2457, 2463, 2525, 2647}
+ignoreCap == false
 
 function onLogin(cid)
 	local player = Player(cid)
@@ -36,6 +37,7 @@ function onLogin(cid)
 			for i = 1, #firstItemspala do
 				player:addItem(firstItemspala[i], 1, ignoreCap)
 				player:addItem(2389, 5, ignoreCap)
+				
 			end		
 		
 		end
