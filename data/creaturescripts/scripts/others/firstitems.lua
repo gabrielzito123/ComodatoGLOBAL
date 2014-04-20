@@ -43,7 +43,7 @@ function onLogin(cid)
 		player:addItem(cid, 2674, 5, ignoreCap) -- 5 apples
 		player:addItem(cid, 2120, 1, ignoreCap) -- 1 rope
 		player:addItem(cid, 2152, 30, ignoreCap)
-		player:addItem(cid, 2554, 30, ignoreCap)
+		player:addItem(cid, 2554, 1, ignoreCap)
 		
 	end
 	return true
