@@ -1,4 +1,8 @@
 function onSay(cid, words, param)
+	
+	local statusLog == on
+	ComodatoLog (statuslog)
+	
 	local player = Player(cid)
 	if not player:getGroup():getAccess() then
 		return true
