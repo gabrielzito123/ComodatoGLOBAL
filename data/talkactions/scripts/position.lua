@@ -1,4 +1,8 @@
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
 	local player = Player(cid)
 	if player:getGroup():getAccess() and param ~= "" then
 		local split = param:split(",")

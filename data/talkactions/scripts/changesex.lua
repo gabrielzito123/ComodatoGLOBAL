@@ -1,6 +1,12 @@
-local premiumDaysCost = 3
+local premiumDaysCost = 20
 
 function onSay(cid, words, param)
+
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
 	local player = Player(cid)
 	if player:getGroup():getAccess() then
 		player:setSex(player:getSex() == PLAYERSEX_FEMALE and PLAYERSEX_MALE or PLAYERSEX_FEMALE)

@@ -1,10 +1,16 @@
 local config = {
 	days = 90,
 	maxDays = 365,
-	price = 10000
+	price = 1000000
 }
 
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
+
 	if configManager.getBoolean(configKeys.FREE_PREMIUM) then
 		return true
 	end

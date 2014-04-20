@@ -33,6 +33,10 @@ function checkJailList(param)
 end
 
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
 	if not Player(cid):getGroup():getAccess() then
 		return false
 	end

@@ -1,6 +1,11 @@
 local savingEvent = 0
 
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
     if getPlayerAccess(cid) ~= 0 then
         if isNumber(param) == TRUE then
             stopEvent(savingEvent)

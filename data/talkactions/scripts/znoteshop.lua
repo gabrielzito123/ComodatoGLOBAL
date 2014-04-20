@@ -1,5 +1,10 @@
 -- Znote Shop v1.0 for Znote AAC on TFS 0.2.13+ Mystic Spirit.
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
 	local storage = 54073 -- Make sure to select non-used storage. This is used to prevent SQL load attacks.
 	local cooldown = 15 -- in seconds.
 	

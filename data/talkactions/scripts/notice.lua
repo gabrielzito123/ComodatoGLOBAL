@@ -1,4 +1,9 @@
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
 	local t = param:split(",")
 	if Player(cid):getGroup():getAccess() then
 		if t[1] == 'add' then

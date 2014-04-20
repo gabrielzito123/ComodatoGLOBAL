@@ -1,4 +1,9 @@
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
 	if not getPlayerFlagValue(cid, PlayerFlag_CanBroadcast) then
 		return true
 	end

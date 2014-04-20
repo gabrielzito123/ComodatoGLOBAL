@@ -1,5 +1,10 @@
 local text = '--Addon List--\n!addon "citizen\n!addon "hunter\n!addon "mage\n!addon "knight\n!addon "summoner\n!addon "warrior\n!addon "barbarian\n!addon "druid\n!addon "wizard\n!addon "oriental\n!addon "pirate\n!addon "assassin\n!addon "beggar\n!addon "beggar\n!addon "shaman\n!addon "norseman\n!addon "nightmare\n!addon "jester\n!addon "brotherhood\n!addon "warmaster\n--Addon List End--'
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
         local cfg = {
                 ["citizen"] = {
                         outfit = {

@@ -1,6 +1,11 @@
 -- <talkaction words="!report" separator=" " script="adminreport.lua"/>
 -- Coded by Dark ShaoOz, modified by Znote
 function onSay(cid, words, param, channel)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
 	local storage = 6708 -- (You can change the storage if its already in use)
 	local delaytime = 30 -- (Exhaust In Seconds.)
 	local x = getPlayerPosition(cid).x -- (Do not edit this.)

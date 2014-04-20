@@ -1,4 +1,9 @@
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
 	local player = Player(cid)
 	if player:getAccountType() <= ACCOUNT_TYPE_TUTOR then
 		return true

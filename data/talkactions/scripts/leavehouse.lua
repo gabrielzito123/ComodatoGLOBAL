@@ -1,4 +1,9 @@
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
 	local player = Player(cid)
 	local house = House(getTileHouseInfo(player:getPosition()))
 	

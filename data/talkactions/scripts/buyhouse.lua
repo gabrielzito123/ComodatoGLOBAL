@@ -1,4 +1,9 @@
 function onSay(cid, words, param)
+
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+
+
 	local housePrice = configManager.getNumber(configKeys.HOUSE_PRICE)
 	if housePrice == -1 then
 		return true

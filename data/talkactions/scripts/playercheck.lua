@@ -26,6 +26,10 @@ function getItemsInContainer(cont, sep)
 end
 
 function onSay(cid, words, param)
+	
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
+	
 	if(param == '') then
 		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Command param required.")
 		return false

@@ -21,7 +21,7 @@
 	<talkaction words="/closeserver" separator=" " script="closeserver.lua" />
 	<talkaction words="/B" separator=" " script="broadcast.lua" />
 	<talkaction words="/m" separator=" " script="place_monster.lua" />
-	<talkaction words="/i" separator=" " script="create_item.lua" />
+	<!--	<talkaction words="/i" separator=" " script="create_item.lua" />  -->
 	<talkaction words="/s" separator=" " script="place_npc.lua" />
 	<talkaction words="/addtutor" separator=" " script="add_tutor.lua" />
 	<talkaction words="/removetutor" separator=" " script="remove_tutor.lua" />
@@ -30,20 +30,20 @@
 	<talkaction words="/looktype" separator=" " script="looktype.lua" />
 	<talkaction words="/summon" separator=" " script="place_summon.lua" />
 	<talkaction words="/chameleon" separator=" " script="chameleon.lua" />
-	<talkaction words="/addskill" separator=" " script="add_skill.lua" />
+	<!--	<talkaction words="/addskill" separator=" " script="add_skill.lua" />  -->
 	<talkaction words="/mccheck" script="mccheck.lua" />
 	<talkaction words="/ghost" script="ghost.lua" />
 	<talkaction words="/clean" script="clean.lua" />
 	<talkaction words="/hide" script="hide.lua" />
 	<talkaction words="/save" script="save.lua" />
-	<talkaction words="/mounts" separator=" " script="allmounts.lua"/>
-	<talkaction words="/addons" separator=" " script="alladdons.lua"/>
+	<!-- <talkaction words="/mounts" separator=" " script="allmounts.lua"/>  -->
+	<!--	<talkaction words="/addons" separator=" " script="alladdons.lua"/> -->
 
 	<!-- player talkactions -->
-	<talkaction words="!buypremium" script="buyprem.lua"/>
+	<!--	<talkaction words="!buypremium" script="buyprem.lua"/> -->
 	<talkaction words="!buyhouse" script="buyhouse.lua"/>
 	<talkaction words="!leavehouse" script="leavehouse.lua"/>
-	<talkaction words="!changesex" script="changesex.lua"/>
+	<!--	<talkaction words="!changesex" script="changesex.lua"/> -->
 	<talkaction words="!uptime" script="uptime.lua"/>
 	<talkaction words="!deathlist" script="deathlist.lua"/>
 	<talkaction words="!kills" script="kills.lua"/>
@@ -51,7 +51,7 @@
 	<talkaction words="!serverinfo" script="serverinfo.lua"/>
 	<talkaction words="!spells" script="spells.lua"/>
 	<talkaction words="!aol" script="aol.lua"/>
-	<talkaction words="!bless" script="bless.lua"/>
+	<!--	<talkaction words="!bless" script="bless.lua"/> -->
 	<talkaction words="!addon" script="addon.lua"/>
 	<talkaction words="!guild" script="bguild.lua"/>
 
@@ -63,17 +63,17 @@
 	
 	
 	<!-- COMODATO -->
-	<talkaction words="!first" script="firstitems.lua"/>
+	<!--	<talkaction words="!first" script="firstitems.lua"/>  -->
 	<talkaction words="!shop" script="znoteshop.lua"/>
 	<talkaction words="!rank" script="rank.lua" />
 	<talkaction words="!news" separator=" " script="notice.lua" />
 	<talkaction log="yes" words="/p" separator=" " script="playercheck.lua" />
-	<talkaction log="yes" words="/tp" acctype="4" script="tp.lua" />
+	<!--	<talkaction log="yes" words="/tp" acctype="4" script="tp.lua" />  -->
 	<talkaction words="!removeskull" script="removeskull.lua" />
 	<talkaction words="!bug" separator=" " script="adminreport.lua" />
 	<talkaction words="!war" separator=" " script="war.lua" />
 	<talkaction words="!balance" separator=" " script="balance.lua" />
-	<talkaction words="!log" separator=" " script="log.lua" />
+	<!--	<talkaction words="!log" separator=" " script="log.lua" />  -->
 	
 <!-- Others 
 	<talkaction log="yes" words="/bug" separator=" " script="bugs.lua" />
