@@ -1,7 +1,7 @@
 function onSay(cid, words, param)
 	
-	local statusLog == on
-	ComodatoLog (statuslog)
+	local statusLog = true
+	ComodatoLog (cid, statusLog, words, param)
 	
 	local player = Player(cid)
 	if not player:getGroup():getAccess() then

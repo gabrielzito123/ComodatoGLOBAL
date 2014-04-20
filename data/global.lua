@@ -765,15 +765,15 @@ function doPlayerAddDialog(cid, id, func)
 	return FALSE
 end
 
-function ComodatoLog (statuslog)
-
-	if statuslog == off then
-		return false
-	end
-	else if statuslog == on then
+function ComodatoLog (cid, statusLog, words, param)
+	
+		if statusLog == true then
 		file = io.open('data/logs/'..getPlayerName(cid)..' talkactions.log','a+')
 		notice = file:write("\n"..getPlayerName(cid).." at " .. os.date("%d %B %Y - %X ", os.time()) .."\n" .. words .. " "..param.."\n")
 		file:close()
-	end
+		end
+
 end
+
+
 	

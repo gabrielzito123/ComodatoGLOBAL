@@ -1,4 +1,4 @@
-function onLogin(cid)
+function onSay(cid, words, param)
 registerCreatureEvent(cid,"FimPremium")
 local pos = {x = 123, y = 123, z = 7}
 if isPremium(cid) then
