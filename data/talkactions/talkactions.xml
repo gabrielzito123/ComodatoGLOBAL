@@ -53,7 +53,7 @@
 	<talkaction words="!serverinfo" script="serverinfo.lua"/>
 	<talkaction words="!spells" script="spells.lua"/>
 	<talkaction words="!aol" script="aol.lua"/>
-	<!--	<talkaction words="!bless" script="bless.lua"/> -->
+	<talkaction words="!bless" script="bless.lua"/>
 	<talkaction words="!addon" script="addon.lua"/>
 	<talkaction words="!guild" script="bguild.lua"/>
 

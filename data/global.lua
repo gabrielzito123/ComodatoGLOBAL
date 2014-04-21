@@ -137,11 +137,11 @@ end
 
 function getBlessingsCost(level)
 	if level <= 30 then
-		return 2000
+		return 5000
 	elseif level >= 120 then
-		return 20000
+		return 50000
 	else
-		return ((level - 20) * 200)
+		return ((level - 20) * 500)
 	end
 end
 

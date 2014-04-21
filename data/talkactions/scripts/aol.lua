@@ -1,5 +1,5 @@
 function onSay(cid, words, param)
-	local cost, p = 50000, Player(cid)
+	local cost, p = 20000, Player(cid)
 	if(not(p:isPzLocked())) then
 		if(p:removeMoney(cost)) then
 			p:addItem(2173, 1)
