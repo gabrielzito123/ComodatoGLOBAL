@@ -2,3 +2,40 @@
 Name: TheMask [Position X: 32349 Y: 32222 Z: 7]
 Bug Report:  teste
 
+------------------------------
+Name: TheMask [Position X: 33328 Y: 32183 Z: 5]
+Bug Report: bug teleport do ghost ship nao funca
+------------------------------
+Name: TheMask [Position X: 33454 Y: 31337 Z: 7]
+Bug Report: aqui eh npc???? diz o players q eh
+------------------------------
+Name: TheMask [Position X: 33461 Y: 31329 Z: 7]
+Bug Report: npc tambem
+------------------------------
+Name: TheMask [Position X: 33477 Y: 31315 Z: 7]
+Bug Report: teleport conferir onde deve largar
+------------------------------
+Name: TheMask [Position X: 33648 Y: 31262 Z: 11]
+Bug Report: teleport conferir onde largar
+------------------------------
+Name: TheMask [Position X: 33647 Y: 31254 Z: 11]
+Bug Report: mapa inacabado
+------------------------------
+Name: TheMask [Position X: 32808 Y: 32115 Z: 7]
+Bug Report: hjgkj
+
+------------------------------
+Name: TheMask [Position X: 31914 Y: 32712 Z: 6]
+Bug Report: bug quando player anda na prancha e cai na agua da debug
+------------------------------
+Name: TheMask [Position X: 31914 Y: 32712 Z: 6]
+Bug Report: deveria ir pra
+11:04 Nepz Maclaud [104]: ir para calassa
+11:04 Nepz Maclaud [104]: onde tem quaras
+11:04 Nepz Maclaud [104]: e tals
+
+mas da debug se andar ate o fim da prancha
+------------------------------
+Name: TheMask [Position X: 32350 Y: 32223 Z: 7]
+Bug Report: teste
+

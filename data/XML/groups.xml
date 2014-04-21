@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <groups>
 	<group id="1" name="player" flags="0" access="0" maxdepotitems="0" maxvipentries="0" />
-	<group id="2" name="TUTOR" flags="29392896" access="2" maxdepotitems="0" maxvipentries="100" />
-	<group id="3" name="SENIOR TUTOR" flags="4324425728" access="3" maxdepotitems="0" maxvipentries="150" />
-	<group id="4" name="GAMEMASTER" flags="13469017309055" access="4" maxdepotitems="0" maxvipentries="200" />
-	<group id="5" name="GOD" flags="272730398712" access="5" maxdepotitems="0" maxvipentries="400" />
+	<group id="2" name="TUTOR" flags="29392896" access="1" maxdepotitems="0" maxvipentries="100" />
+	<group id="3" name="SENIOR TUTOR" flags="4324425728" access="1" maxdepotitems="0" maxvipentries="150" />
+	<group id="4" name="GAMEMASTER" flags="13469017309055" access="1" maxdepotitems="0" maxvipentries="200" />
+	<group id="5" name="GOD" flags="272730398712" access="1" maxdepotitems="0" maxvipentries="400" />
 </groups>
