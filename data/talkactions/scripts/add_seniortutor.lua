@@ -15,13 +15,14 @@ function onSay(cid, words, param)
 		return false
 	end
 
-	if target:getAccountType() ~= ACCOUNT_TYPE_SENIORTUTOR then
-		player:sendCancelMessage("You can only promote a normal player to a tutor.")
+	if target:getAccountType() ~= ACCOUNT_TYPE_NORMAL then
+		player:sendCancelMessage("You can only promote a normal player to a senior tutor.")
 		return false
 	end
 
 	target:setAccountType(ACCOUNT_TYPE_SENIORTUTOR)
-	target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have been promoted to a tutor by " .. player:getName() .. ".")
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have promoted " .. target:getName() .. " to a tutor.")
+	target:setGroup(Group(ACCOUNT_TYPE_SENIORTUTOR))
+	target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have been promoted to a senior by " .. player:getName() .. ".")
+	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have promoted " .. target:getName() .. " to a senior tutor.")
 	return false
 end
