@@ -39,3 +39,21 @@ mas da debug se andar ate o fim da prancha
 Name: TheMask [Position X: 32350 Y: 32223 Z: 7]
 Bug Report: teste
 
+------------------------------
+Name: TheMask [Position X: 32888 Y: 31918 Z: 8]
+Bug Report: olhar se tem como pegar items pelo mapa, Sorc Infernal estava aqui
+------------------------------
+Name: TheMask [Position X: 33292 Y: 32469 Z: 7]
+Bug Report: teste
+------------------------------
+Name: TheMask [Position X: 33292 Y: 32469 Z: 7]
+Bug Report: teste 2
+------------------------------
+Name: TheMask [Position X: 33083 Y: 31213 Z: 8]
+Bug Report: checkar teleport
+------------------------------
+Name: TheMask [Position X: 33083 Y: 31214 Z: 8]
+Bug Report: teleport deve ir para Position: [X: 33092] [Y: 31122] [Z: 12].
+------------------------------
+Name: TheMask [Position X: 33236 Y: 32409 Z: 7]
+Bug Report: trocar porta por closedoor tem um helmet aqui  q estao roubando cada vez q server reinicia deletar todos do banco de dados eh um Royal Helmet
