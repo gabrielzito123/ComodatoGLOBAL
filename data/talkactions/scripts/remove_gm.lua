@@ -2,9 +2,9 @@ function onSay(cid, words, param)
 
 	local statusLog = true
 	ComodatoLog (cid, statusLog, words, param)
-	
+
 	local player = Player(cid)
-	if player:getAccountType() <= ACCOUNT_TYPE_GOD then
+	if player:getAccountType() <= ACCOUNT_TYPE_GAMEMASTER then
 		return true
 	end
 
@@ -15,15 +15,17 @@ function onSay(cid, words, param)
 	end
 
 	if result.getDataInt(resultId, "account_type") ~= ACCOUNT_TYPE_GAMEMASTER then
-		player:sendCancelMessage("You can only demote a GAMEMASTER to a normal player.")
+		player:sendCancelMessage("You can only demote a GAME MASTER to a normal player.")
 		return false
 	end
 
 	local target = Player(param)
 	if target ~= nil then
 		target:setAccountType(ACCOUNT_TYPE_NORMAL)
+		target:setGroup(Group(ACCOUNT_TYPE_NORMAL))
 	else
 		db.query("UPDATE `accounts` SET `type` = " .. ACCOUNT_TYPE_NORMAL .. " WHERE `id` = " .. result.getDataInt(resultId, "account_id"))
+		db.query("UPDATE `players` SET `group_id` = " .. ACCOUNT_TYPE_NORMAL .. " WHERE `id` = " .. result.getDataInt(resultId, "account_id"))
 	end
 
 	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have demoted " .. result.getDataString(resultId, "name") .. " to a normal player.")
