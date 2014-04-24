@@ -31,7 +31,7 @@
 
 	<globalevent name="PowerGamers" interval="15000" script="powergamers.lua"/>
 
-<!--	<globalevent name="website_shop_item_delivery" interval="30000" script="shop.lua"/> -->
+	<globalevent name="website_shop_item_delivery" interval="30000" script="shop.lua"/> 
 
 
 </globalevents>
