@@ -57,3 +57,9 @@ Bug Report: teleport deve ir para Position: [X: 33092] [Y: 31122] [Z: 12].
 ------------------------------
 Name: TheMask [Position X: 33236 Y: 32409 Z: 7]
 Bug Report: trocar porta por closedoor tem um helmet aqui  q estao roubando cada vez q server reinicia deletar todos do banco de dados eh um Royal Helmet
+------------------------------
+Name: TheMask [Position X: 33507 Y: 32556 Z: 7]
+Bug Report: bug npc sandomo dont give the quest nothing happen
+------------------------------
+Name: TheMask [Position X: 33116 Y: 31699 Z: 7]
+Bug Report: warlock em lugar indevido

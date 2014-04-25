@@ -43,19 +43,19 @@
 
 	<!-- player talkactions -->
 	<!--	<talkaction words="!buypremium" script="buyprem.lua"/> -->
-	<talkaction words="!buyhouse" script="buyhouse.lua"/>
-	<talkaction words="!leavehouse" script="leavehouse.lua"/>
+	<talkaction access="0" words="!buyhouse" script="buyhouse.lua"/>
+	<talkaction access="0" words="!leavehouse" script="leavehouse.lua"/>
 	<!--	<talkaction words="!changesex" script="changesex.lua"/> -->
-	<talkaction words="!uptime" script="uptime.lua"/>
-	<talkaction words="!deathlist" script="deathlist.lua"/>
-	<talkaction words="!kills" script="kills.lua"/>
-	<talkaction words="!online" script="online.lua"/>
-	<talkaction words="!serverinfo" script="serverinfo.lua"/>
-	<talkaction words="!spells" script="spells.lua"/>
-	<talkaction words="!aol" script="aol.lua"/>
-	<talkaction words="!bless" script="bless.lua"/>
-	<talkaction words="!addon" script="addon.lua"/>
-	<talkaction words="!guild" script="bguild.lua"/>
+	<talkaction access="0" words="!uptime" script="uptime.lua"/>
+	<talkaction access="0" words="!deathlist" script="deathlist.lua"/>
+	<talkaction access="0" words="!kills" script="kills.lua"/>
+	<talkaction access="0" words="!online" script="online.lua"/>
+	<talkaction access="0" words="!serverinfo" script="serverinfo.lua"/>
+	<talkaction access="0" words="!spells" script="spells.lua"/>
+	<talkaction access="0" words="!aol" script="aol.lua"/>
+	<talkaction access="0" words="!bless" script="bless.lua"/>
+	<talkaction access="0" words="!addon" script="addon.lua"/>
+	<talkaction access="0" words="!guild" script="bguild.lua"/>
 
 	<!-- test talkactions -->
 	<talkaction words="!z" separator=" " script="magiceffect.lua"/>
@@ -66,15 +66,15 @@
 	
 	<!-- COMODATO -->
 		<talkaction words="!first" script="firstitems.lua"/> 
-	<talkaction words="!shop" script="znoteshop.lua"/>
-	<talkaction words="!rank" script="rank.lua" />
-	<talkaction words="!news" separator=" " script="notice.lua" />
-	<talkaction log="yes" words="/p" separator=" " script="playercheck.lua" />
+	<talkaction access="0" words="!shop" script="znoteshop.lua"/>
+	<talkaction access="0" words="!rank" script="rank.lua" />
+	<talkaction access="0" words="!news" separator=" " script="notice.lua" />
+	<talkaction words="/p" separator=" " script="playercheck.lua" />
 	<!--	<talkaction log="yes" words="/tp" acctype="4" script="tp.lua" />  -->
 	<talkaction words="!removeskull" script="removeskull.lua" />
 	<talkaction words="!bug" separator=" " script="adminreport.lua" />
-	<talkaction words="!war" separator=" " script="war.lua" />
-	<talkaction words="!balance" separator=" " script="balance.lua" />
+	<talkaction access="0" words="!war" separator=" " script="war.lua" />
+	<talkaction access="0" words="!balance" separator=" " script="balance.lua" />
 	<!--	<talkaction words="!log" separator=" " script="log.lua" />  -->
 	
 <!-- Others 
