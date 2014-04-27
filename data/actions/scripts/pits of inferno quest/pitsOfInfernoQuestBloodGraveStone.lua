@@ -1,5 +1,5 @@
 local newPos = {x = 32791, y = 32332, z = 10}
-local bloodPos = {x = 32791, y = 32334, z = 9}
+local bloodPos = {x = 32791, y = 32333, z = 9}
 function onUse(cid, item, fromPosition, itemEx, toPosition)
 	local player = Player(cid)
 	local blood = pushThing(Tile(bloodPos):getItemById(2016))

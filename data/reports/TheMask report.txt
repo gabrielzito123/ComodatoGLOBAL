@@ -63,3 +63,6 @@ Bug Report: bug npc sandomo dont give the quest nothing happen
 ------------------------------
 Name: TheMask [Position X: 33116 Y: 31699 Z: 7]
 Bug Report: warlock em lugar indevido
+------------------------------
+Name: TheMask [Position X: 32942 Y: 32770 Z: 12]
+Bug Report: diz que aqui era pra nascer o boss Horestis clikando num dos vazos dos cantos esse boss dropa o item pra montaria do escorpiao
