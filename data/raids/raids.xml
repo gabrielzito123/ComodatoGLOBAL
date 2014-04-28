@@ -13,7 +13,8 @@
 	<raid name="Old Widow" file="bosses/The Old Widow.xml" interval2="1440" chance="1" margin="60" enabled="yes"/>
 	<raid name="Orshabaal" file="bosses/Orshabaal.xml" interval2="1440" chance="1" margin="60" enabled="yes"/> 
 	<raid name="Necropharus" file="bosses/Necropharus.xml" interval2="1440" chance="1" margin="60" enabled="yes"/>
-	<raid name="Horned Fox" file="bosses/horned.xml" interval2="1440" chance="1" margin="60" enabled="yes"/> 	
+	<raid name="Horned Fox" file="bosses/horned.xml" interval2="1440" chance="1" margin="60" enabled="yes"/>
+	<raid name="Tiquandas" file="bosses/tiquandas.xml" interval2="15" margin="700" enabled="no"/> 	
 
 	<!-- Special events (not active) -->
 	<!--raid name="Halloween Hare" file="bosses/halloween.xml" interval2="150" chance="1" margin="60" enabled="no"/-->
