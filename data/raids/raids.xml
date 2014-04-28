@@ -18,7 +18,11 @@
 	<!-- Special events (not active) -->
 	<!--raid name="Halloween Hare" file="bosses/halloween.xml" interval2="150" chance="1" margin="60" enabled="no"/-->
 
-	<!-- Raids Normals -->	
+	<!-- Raids Normals -->
+	<raid name="Cavebear" file="normal/cavebear.xml" interval2="15" margin="700" enabled="no"/>
+	<raid name="Draptor" file="normal/draptor.xml" interval2="15" margin="700" enabled="no"/>
+	<raid name="Dragonling" file="normal/dragonling.xml" interval2="15" margin="700" enabled="no"/>
+	
 	<raid name="citizen" file="normal/feverish citizen.xml" interval2="150" chance="1" margin="60" enabled="yes"/> 
 	<raid name="RatsThais" file="normal/ratsthais.xml" interval2="150" chance="1" margin="60" enabled="yes"/> 
 	<raid name="OrcsThais" file="normal/OrcsThais.xml" interval2="150" chance="2" margin="60" enabled="yes"/> 

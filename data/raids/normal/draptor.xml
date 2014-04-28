@@ -1,0 +1,9 @@
+<raid>
+<announce delay="1000" type="warning" message="The dragons of the Dragonblaze Mountains have descended to Zao to protect the lizardkin!" />
+
+  <!--Area Spawns-->
+  <areaspawn delay="60000" fromx="33157" fromy="31256" fromz="7" tox="33299" toy="31357" toz="7">
+    <monster name="Draptor" amount="2" />
+  </areaspawn>
+
+</raid>

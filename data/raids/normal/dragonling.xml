@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+    <!--Announcements-->
+    <announce delay="30000" type="warning" message="Dragonling has returned to Goroma. Stop him before its too late." />
+ 
+  <!--Single Spawns-->
+  <singlespawn delay="180000" name="Dragonling" x="32076" y="32615" z="7" />
+   <singlespawn delay="360000" name="Dragonling" x="32067" y="32589" z="7" />
+  <!--Area Spawns-->
+</raid>

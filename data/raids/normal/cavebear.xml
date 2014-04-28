@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+    <!--Announcements-->
+    <announce delay="1000" type="warning" message="Beware of Undead CaveBear!" />
+ 
+  <!--Area Spawns-->
+  <areaspawn delay="10000" fromx="31910" fromy="32556" fromz="10" tox="31983" toy="32595" toz="10">
+    <monster name="undead cavebear" amount="4" />
+    <monster name="necromancer" amount="25" />
+    <monster name="lich" amount="30" />
+    <monster name="bonebeast" amount="20" />
+  <monster name="demon skeleton" amount="20" />
+  </areaspawn>
+</raid>
