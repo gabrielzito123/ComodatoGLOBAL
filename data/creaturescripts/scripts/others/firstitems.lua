@@ -1,120 +1,76 @@
+
+
 function onLogin(cid)
-	if getPlayerGroupId(cid) == 1 and getPlayerStorageValue(cid, 87778) == -1 then
-		if isSorcerer(cid) then
-			local bag = doPlayerAddItem(cid, 1988, 1)
-	
-			doAddContainerItem(bag, 2789, 50)
-			doAddContainerItem(bag, 10513, 1)
-			doAddContainerItem(bag, 7618, 20)
-			doAddContainerItem(bag, 7620, 20)			
-		
-			doPlayerAddItem(cid, 2457, 1)
-			doPlayerAddItem(cid, 8870, 1)
-			doPlayerAddItem(cid, 2525, 1)
-			doPlayerAddItem(cid, 2190, 1)
-			doPlayerAddItem(cid, 2647, 1)
-			doPlayerAddItem(cid, 2643, 1)
-
-		    doPlayerAddBlessing(cid, 1)
-		    doPlayerAddBlessing(cid, 2)
-		    doPlayerAddBlessing(cid, 3)
-		    doPlayerAddBlessing(cid, 4)
-		    doPlayerAddBlessing(cid, 5)
-			
-	if(getPlayerSex(cid) == 0)then
-		doPlayerAddOutfit(cid, 140, 3)
-	else
-		doPlayerAddOutfit(cid, 132, 3)
-	end	
-
-			setPlayerStorageValue(cid, 87778, 1)
-
-		elseif isDruid(cid) then
-			local bag = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(bag, 2789, 50)
-			doAddContainerItem(bag, 10513, 1)
-			doAddContainerItem(bag, 7618, 20)
-			doAddContainerItem(bag, 7620, 20)				
-		
-			doPlayerAddItem(cid, 2457, 1)
-			doPlayerAddItem(cid, 8870, 1)
-			doPlayerAddItem(cid, 2525, 1)
-			doPlayerAddItem(cid, 2182, 1)
-			doPlayerAddItem(cid, 2647, 1)
-			doPlayerAddItem(cid, 2643, 1)
-
-		    doPlayerAddBlessing(cid, 1)
-		    doPlayerAddBlessing(cid, 2)
-		    doPlayerAddBlessing(cid, 3)
-		    doPlayerAddBlessing(cid, 4)
-		    doPlayerAddBlessing(cid, 5)
-			
-	if(getPlayerSex(cid) == 0)then
-		doPlayerAddOutfit(cid, 140, 3)
-	else
-		doPlayerAddOutfit(cid, 132, 3)
-	end	
-
-			setPlayerStorageValue(cid, 87778, 1)
-
-		elseif isPaladin(cid) then
-			local bag = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(bag, 2789, 50)
-			doAddContainerItem(bag, 10513, 1)
-			doAddContainerItem(bag, 7618, 15)
-			doAddContainerItem(bag, 7620, 10)				
-		
-			doPlayerAddItem(cid, 2457, 1)
-			doPlayerAddItem(cid, 8872, 1)
-			doPlayerAddItem(cid, 2525, 1)
-			doPlayerAddItem(cid, 2389, 1)
-			doPlayerAddItem(cid, 2643, 1)
-			doPlayerAddItem(cid, 2647, 1)
-
-		    doPlayerAddBlessing(cid, 1)
-		    doPlayerAddBlessing(cid, 2)
-		    doPlayerAddBlessing(cid, 3)
-		    doPlayerAddBlessing(cid, 4)
-		    doPlayerAddBlessing(cid, 5)
-			
-	if(getPlayerSex(cid) == 0)then
-		doPlayerAddOutfit(cid, 140, 3)
-	else
-		doPlayerAddOutfit(cid, 132, 3)
-	end	
-
-			setPlayerStorageValue(cid, 87778, 1)
-
-		elseif isKnight(cid) then
-			local bag = doPlayerAddItem(cid, 1988, 1)
-			doAddContainerItem(bag, 2789, 50)
-			doAddContainerItem(bag, 10513, 1)
-			doAddContainerItem(bag, 7618, 25)
-			doAddContainerItem(bag, 7620, 5)
-			doAddContainerItem(bag, 2429, 1)
-			doAddContainerItem(bag, 2417, 1)			
-		
-			doPlayerAddItem(cid, 2457, 1)
-			doPlayerAddItem(cid, 2463, 1)
-			doPlayerAddItem(cid, 2525, 1)
-			doPlayerAddItem(cid, 2383, 1)
-			doPlayerAddItem(cid, 2643, 1)
-			doPlayerAddItem(cid, 2647, 1)
-
-		    doPlayerAddBlessing(cid, 1)
-		    doPlayerAddBlessing(cid, 2)
-		    doPlayerAddBlessing(cid, 3)
-		    doPlayerAddBlessing(cid, 4)
-		    doPlayerAddBlessing(cid, 5)
-			
-	if(getPlayerSex(cid) == 0)then
-		doPlayerAddOutfit(cid, 140, 3)
-	else
-		doPlayerAddOutfit(cid, 132, 3)
-	end	
-
-			setPlayerStorageValue(cid, 87778, 1)
-		end
-	end
- 	return TRUE
+	local storage = 87778
+   local config = {
+     voc_items = {
+       { -- SORC
+         {2190}, -- wand of vortex
+       },
+       { -- DRUID
+         {2182}, -- snakebite rod
+       },
+       { -- PALADIN
+         {2410}, -- throwing knife
+       },
+       { -- KNIGHT
+         {8602}, -- jagged sword
+       }
+     },
+     all_items = {
+       {2478}, -- brass legs
+       {2643}, -- leather boots
+       {2465}, -- brass armor
+       {2509}, -- steel shield
+       {2480}, -- legion helmet
+     },
+     extra_items = {
+       {2789, 15},
+	   {2152, 30},
+	   {2389, 5},
+       {2120},
+       {2554},
+     },
+     knight_weapons = {
+       {2439}, -- daramanian mace
+       {8601}, -- steel axe
+     }
+   }
+   if getPlayerGroupId(cid) < 6 then
+     if getPlayerStorageValue(cid, storage) == -1 then
+       local common = config.voc_items[getPlayerVocation(cid)]
+       if common ~= nil then
+         for _, v in ipairs(common) do
+           doPlayerAddItem(cid, v[1], v[2] or 1)
+         end
+       end
+       
+       local all = config.all_items
+       if all ~= nil then
+         for _, v in ipairs(all) do
+           doPlayerAddItem(cid, v[1], v[2] or 1)
+         end
+       end
+       
+       local extra = config.extra_items
+       local bp = doPlayerAddItem(cid, 1988, 1)
+       if extra ~= nil then
+         for _, v in ipairs(extra) do
+           doAddContainerItem(bp, v[1], v[2] or 1)
+         end
+       end
+       
+       local weapons = config.knight_weapons
+       if weapons ~= nil then
+         for _, w in ipairs(weapons) do
+           if isKnight(cid) then
+             doAddContainerItem(bp, w[1], w[2] or 1)
+           end
+         end
+       end
+       
+       setPlayerStorageValue(cid, storage, 1)
+     end
+   end
+   return true
 end

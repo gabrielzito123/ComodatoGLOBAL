@@ -455,7 +455,7 @@
 			<missionstate id="4" description="You have completed all missions. Gabel allows you now to trade with his people."/>
 		</mission>
 	</quest>
-<!--	<quest name="Example Quest I" startstorageid="1001" startstoragevalue="1">
+	<quest name="Example Quest I" startstorageid="1001" startstoragevalue="1">
 		<mission name="Example Mission 1" storageid="1001" startvalue="1" endvalue="3">
 			<missionstate id="1" description="Example description 1"/>
 			<missionstate id="2" description="Example description 2"/>
@@ -465,5 +465,5 @@
 			<missionstate id="4" description="Example description 1"/>
 			<missionstate id="5" description="Example description 2"/>
 		</mission>
-	</quest> -->
+	</quest>
 </quests>
