@@ -65,7 +65,7 @@ function creatureSayCallback(cid, type, msg)
 			talkState[talkUser] = 0
 		end
 	elseif (msgcontains(msg, 'axe') or msgcontains(msg, 'hallowed axe')) then
-		if (getPlayerStorageValue(cid, start_storage) < 2) then 
+		if (getPlayerStorageValue(cid, start_storage) == 2) then 
 			npcHandler:say("Ahh, you've got an axe. Very good. I can make a hallowed axe out of it. It will cost you... er... a donation of 1,000 gold. Alright?",cid)	
 			talkState[talkUser] = 2
 		else
@@ -73,7 +73,7 @@ function creatureSayCallback(cid, type, msg)
 			talkState[talkUser] = 0
 		end
 	elseif (msgcontains(msg, 'yes') and talkState[talkUser] == 2) then
-		if (getPlayerStorageValue(cid, start_storage) < 2) then
+		if (getPlayerStorageValue(cid, start_storage) == 2) then
 			if (doPlayerRemoveMoney(cid, 1000)) then
         			if (doPlayerRemoveItem(cid,2386, 1))  then  
            				npcHandler:say("Let's see....<mumbles a prayer>....here we go. The blessing on this axe will be absorbed by all the demonic energy around here. I presume it will not last very long, so better hurry. Actually, I can refresh the blessing as often as you like.",cid)

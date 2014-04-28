@@ -7,7 +7,7 @@ function onStepIn(cid, item, position, lastPosition, fromPosition, toPosition, a
  	if (isPlayer(cid)) then
 		if (getPlayerStorageValue(cid, 1010) < 1) then
 			if (getPlayerLevel(cid) >= 120) then
-				if (getPlayerStorageValue(cid, squarestorage) == 5) and (not isPlayerInArea({x = 32706, y = 32345, z = 7, stackpos = 255}, {x = 32725, y = 32357, z = 7, stackpos = 255})) then
+				if (getPlayerStorageValue(cid, squarestorage) == 5) and (getPlayerItemCount(cid, 8293) >= 1) and (not isPlayerInArea({x = 32706, y = 32345, z = 7, stackpos = 255}, {x = 32725, y = 32357, z = 7, stackpos = 255})) then
 					doTeleportThing(cid, enterPosition)
 					doSendMagicEffect(getThingPos(cid), CONST_ME_TELEPORT)
 					setPlayerStorageValue(cid, 1011, 1)
