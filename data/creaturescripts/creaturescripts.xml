@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
+	<!-- Antibot System 
+		<event type="kill" name="antibot" event="script" value="antibot.lua"/>	
+	-->
+
 	<!-- Elemental Spheres Quest -->
 	<event type="kill" name="elementalspheresquestOverlords" script="elemental spheres quest/ElementalSpheresQuestKillOverlords.lua"/>
 

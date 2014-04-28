@@ -31,5 +31,6 @@ function onLogin(cid)
 	player:registerEvent("SvargrondArenaKill")
 	player:registerEvent("AdvanceSave")
 	player:registerEvent("StorageConversion")
+	--player:registerEvent("antibot")	--	
 	return true
 end
