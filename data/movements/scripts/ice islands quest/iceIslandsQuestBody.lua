@@ -6,7 +6,7 @@ function onStepIn(cid, item, position, lastPosition)
 			for x = -1, 1 do
 				for y = 1, 1 do
 					if(y ~= 0 and x ~= 0) then
-						doSendMagicEffect({x = position.x + x, y = position.y + y, z = position.z}, CONST_ME_DEATH)
+						doSendMagicEffect({x = position.x + x, y = position.y + y, z = position.z}, CONST_ME_MORTAREA)
 					end
 				end
 			end

@@ -9,7 +9,7 @@ local player = Player(cid)
 			for x = -1, 1 do
 				for y = 1, 1 do
 					if y ~= 0 and x ~= 0 then
-						doSendMagicEffect({x = toPosition.x + x, y = toPosition.y + y, z = toPosition.z}, CONST_ME_DEATH)
+						doSendMagicEffect({x = toPosition.x + x, y = toPosition.y + y, z = toPosition.z}, CONST_ME_MORTAREA)
 					end
 				end
 			end
