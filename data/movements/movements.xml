@@ -59,6 +59,7 @@
 	<movevent event="StepIn" fromuid="3144" touid="3146" script="bigfoot burden quest/bigfootBurdenQuestWarzone.lua"/>
 	<movevent event="StepIn" fromuid="3140" touid="3142" script="bigfoot burden quest/bigfootBurdenQuestWarzoneTeleports.lua"/>
 	<movevent event="StepIn" fromuid="3122" touid="3123" script="bigfoot burden quest/bigfootBurdenQuestXray.lua"/>
+	<movevent event="StepIn" itemid="17868" script="bigfoot burden quest/teste.lua"/>
 
 	<!-- Demon Oak Quest -->
 	<movevent event="StepIn" uniqueid="9000" script="demon oak quest/demonOakTreeEnter.lua" />
