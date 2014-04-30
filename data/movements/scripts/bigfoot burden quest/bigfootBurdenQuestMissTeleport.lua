@@ -1,11 +1,12 @@
 local destination = {
 d1 = { tele = {x = 33003, y = 31918, z = 10}, tele2 = {x = 33008, y = 31921, z = 10} },
 d2 = { tele = {x = 33007, y = 31921, z = 10}, tele2 = {x = 33002, y = 31918, z = 10} },
-d3 = { tele = {x = 33001, y = 31918, z = 10}, tele2 = {x = 33008, y = 31921, z = 10} },
-d4 = { tele = {x = 33002, y = 31918, z = 10}, tele2 = {x = 33008, y = 31921, z = 10} },
-d5 = { tele = {x = 33009, y = 31918, z = 10}, tele2 = {x = 33008, y = 31921, z = 10} },
-d6 = { tele = {x = 33001, y = 31918, z = 10}, tele2 = {x = 33008, y = 31921, z = 10} }
+d3 = { tele = {x = 32993, y = 31913, z = 12}, tele2 = {x = 32995, y = 31917, z = 12} },
+d4 = { tele = {x = 32995, y = 31916, z = 12}, tele2 = {x = 32993, y = 31912, z = 12} },
+d5 = { tele = {x = 33011, y = 31936, z = 11}, tele2 = {x = 33014, y = 31934, z = 11} },
+d6 = { tele = {x = 33013, y = 31934, z = 11}, tele2 = {x = 33010, y = 31936, z = 11} }
 }
+
 
 function onStepIn(cid, item, position, lastPosition)
 		local p = Player(cid)
