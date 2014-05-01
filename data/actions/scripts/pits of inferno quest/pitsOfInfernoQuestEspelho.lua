@@ -7,8 +7,9 @@ local pos = {
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
 	if(item.actionid == 39511) then
-		doRemoveItem(getTileItemById(pos[item.actionid], 1871).uid, 1)
+
 		doCreateItem(1871, 1, pos[item.actionid+1])
+		doRemoveItem(getTileItemById(pos[item.actionid], 1871).uid, 1)
 	end
 	
 	if (item.actionid == 39512) then
