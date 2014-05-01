@@ -11,12 +11,12 @@ d9 = { tele = {x = 32989, y = 31908, z = 12}, tele2 = {x = 33021, y = 31902, z =
 d10 = { tele = {x = 33122, y = 31976, z = 10}, tele2 = {x = 33017, y = 31872, z = 9} },
 d11 = { tele = {x = 33128, y = 31964, z = 11}, tele2 = {x = 33025, y = 31884, z = 9} }
 --, d12 = { tele = {x = 32989, y = 31908, z = 1}, tele2 = {x = 33029, y = 31900, z = 9} }
+--, d13 = { tele = {x = 32789, y = 31796, z = 10}, tele2 = {x = 32758, y = 31807, z = 10} }
 }
 
 
 function onStepIn(cid, item, position, lastPosition)
 		local p = Player(cid)
-		local aid = destination[item.actionid]
 		
 		if position.x == destination.d1.tele.x and position.y == destination.d1.tele.y and position.z == destination.d1.tele.z then
 			p:teleportTo(destination.d1.tele2)
@@ -65,6 +65,10 @@ function onStepIn(cid, item, position, lastPosition)
 			
 --		elseif position.x == destination.d12.tele.x and position.y == destination.d12.tele.y and position.z == destination.d12.tele.z then
 --			p:teleportTo(destination.d12.tele2)
+--			p:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+		
+--		elseif position.x == destination.d13.tele.x and position.y == destination.d13.tele.y and position.z == destination.d13.tele.z then
+--			p:teleportTo(destination.d13.tele2)
 --			p:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			
 		end
