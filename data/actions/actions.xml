@@ -666,4 +666,12 @@
 	<action fromid="14755" toid="14760" script="other/hive_doors1.lua" />
 	<action fromid="14767" toid="14771" script="other/hive_doors2.lua" />
 	<action itemid="14405" function="market"/>
+	
+		<!-- COMODATO -->
+		
+	<action itemid="16094" script="other/randitems.lua" />
+	<action itemid="7587" script="other/randitems.lua" />
+	<action itemid="15572" script="other/randitems.lua" />
+	<action itemid="18215" script="other/randitems.lua" />
+	
 </actions>
