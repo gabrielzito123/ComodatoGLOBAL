@@ -66,3 +66,30 @@ Bug Report: warlock em lugar indevido
 ------------------------------
 Name: TheMask [Position X: 32942 Y: 32770 Z: 12]
 Bug Report: diz que aqui era pra nascer o boss Horestis clikando num dos vazos dos cantos esse boss dropa o item pra montaria do escorpiao
+------------------------------
+Name: TheMask [Position X: 32808 Y: 32630 Z: 11]
+Bug Report: verificar essa portaplayers zeus disse q passo e depois nao voltava, mas quando testei nao dava nem pra ir, ver o q tem depois e o q deve fazer
+------------------------------
+Name: TheMask [Position X: 32855 Y: 32320 Z: 10]
+Bug Report: rope nao esta puxando os jogadores de baixo
+------------------------------
+Name: TheMask [Position X: 33116 Y: 31701 Z: 7]
+Bug Report: esse respawn eh assim mesmo?  cheio de warlock e necromancer????
+------------------------------
+Name: TheMask [Position X: 32740 Y: 32392 Z: 14]
+Bug Report: espelho nao deletar
+------------------------------
+Name: TheMask [Position X: 32989 Y: 31910 Z: 12]
+Bug Report: nao volta da war zone
+
+------------------------------
+Name: TheMask [Position X: 33020 Y: 31903 Z: 9]
+Bug Report: deveria voltar para k
+
+------------------------------
+Name: TheMask [Position X: 33020 Y: 31888 Z: 9]
+Bug Report: voltar para 2
+
+------------------------------
+Name: TheMask [Position X: 33120 Y: 31976 Z: 10]
+Bug Report: mais um teleport bugado na warzone

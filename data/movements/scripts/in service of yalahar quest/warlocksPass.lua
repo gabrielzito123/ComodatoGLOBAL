@@ -1,6 +1,6 @@
 function onStepIn(cid, item, position, lastPosition)
 	if(item.actionid == 7813) then
-		if(lastPosition.y == 31081) then
+		if(lastPosition.y == 32715) then
 			if(getPlayerItemCount(cid, 8299) >= 1) then
 				doPlayerRemoveItem(cid, 8299, 1)
 				doSendMagicEffect(position, CONST_ME_MAGIC_RED)

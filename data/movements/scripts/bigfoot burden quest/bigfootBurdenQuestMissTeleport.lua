@@ -7,8 +7,10 @@ d5 = { tele = {x = 33011, y = 31936, z = 11}, tele2 = {x = 33014, y = 31934, z =
 d6 = { tele = {x = 33013, y = 31934, z = 11}, tele2 = {x = 33013, y = 31936, z = 11} },
 d7 = { tele = {x = 32996, y = 31923, z = 10}, tele2 = {x = 33013, y = 31881, z = 9} },
 d8 = { tele = {x = 33011, y = 31944, z = 11}, tele2 = {x = 33019, y = 31887, z = 9} },
-d9 = { tele = {x = 32989, y = 31908, z = 12}, tele2 = {x = 33021, y = 31902, z = 9} }
-
+d9 = { tele = {x = 32989, y = 31908, z = 12}, tele2 = {x = 33021, y = 31902, z = 9} },
+d10 = { tele = {x = 33122, y = 31976, z = 10}, tele2 = {x = 33017, y = 31872, z = 9} },
+d11 = { tele = {x = 33128, y = 31964, z = 11}, tele2 = {x = 33025, y = 31884, z = 9} }
+--, d12 = { tele = {x = 32989, y = 31908, z = 1}, tele2 = {x = 33029, y = 31900, z = 9} }
 }
 
 
@@ -52,6 +54,19 @@ function onStepIn(cid, item, position, lastPosition)
 		elseif position.x == destination.d9.tele.x and position.y == destination.d9.tele.y and position.z == destination.d9.tele.z then
 			p:teleportTo(destination.d9.tele2)
 			p:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+			
+		elseif position.x == destination.d10.tele.x and position.y == destination.d10.tele.y and position.z == destination.d10.tele.z then
+			p:teleportTo(destination.d10.tele2)
+			p:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+			
+		elseif position.x == destination.d11.tele.x and position.y == destination.d11.tele.y and position.z == destination.d11.tele.z then
+			p:teleportTo(destination.d11.tele2)
+			p:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+			
+--		elseif position.x == destination.d12.tele.x and position.y == destination.d12.tele.y and position.z == destination.d12.tele.z then
+--			p:teleportTo(destination.d12.tele2)
+--			p:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+			
 		end
 return true
 end
