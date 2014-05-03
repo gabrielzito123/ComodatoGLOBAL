@@ -65,4 +65,3 @@ function onLogin(cid)
     end
     return true
 end
-

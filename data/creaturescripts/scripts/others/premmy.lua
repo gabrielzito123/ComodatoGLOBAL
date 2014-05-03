@@ -1,6 +1,6 @@
 function onLogin(cid)
 registerCreatureEvent(cid,"Premmy")
-local pos = {x = 123, y = 123, z = 7}
+local pos = {x = 32369, y = 32241, z = 7}
 if isPremium(cid) then
 setPlayerStorageValue(cid, 9899, 1)
 elseif getPlayerStorageValue(cid, 9899) == 1 and not isPremium(cid) then
