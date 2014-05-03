@@ -8,13 +8,13 @@
 	<raid name="Arachir the Ancient One" file="bosses/Arachir the Ancient One.xml" interval2="1440" chance="10" margin="60" enabled="yes"/>
 	<raid name="Zulazza the Corruptor" file="bosses/Zulazza the Corruptor.xml" interval2="1440" chance="10" margin="60" enabled="yes"/> 
 	<raid name="Morgaroth" file="bosses/Morgaroth.xml" interval2="1440" chance="30" margin="60" enabled="yes"/> 
-	<raid name="Ferumbras" file="bosses/Ferumbras.xml" interval2="1440" chance="60" margin="60" enabled="yes"/> 
+	<raid name="Ferumbras" file="bosses/Ferumbras.xml" interval2="1" chance="1" margin="60" enabled="yes"/> 
 	<raid name="Ghazbaran" file="bosses/Ghazbaran.xml" interval2="1440" chance="10" margin="60" enabled="yes"/> 
 	<raid name="Old Widow" file="bosses/The Old Widow.xml" interval2="1440" chance="10" margin="60" enabled="yes"/>
-	<raid name="Orshabaal" file="bosses/Orshabaal.xml" interval2="1440" chance="30" margin="60" enabled="yes"/> 
+	<raid name="Orshabaal" file="bosses/Orshabaal.xml" interval2="1" chance="99" margin="60" enabled="yes"/> 
 	<raid name="Necropharus" file="bosses/Necropharus.xml" interval2="1440" chance="10" margin="60" enabled="yes"/>
 	<raid name="Horned Fox" file="bosses/horned.xml" interval2="1440" chance="10" margin="60" enabled="yes"/>
-	<raid name="Tiquandas" file="bosses/tiquandas.xml" interval2="15" margin="700" enabled="yes"/> 	
+	<raid name="Tiquandas" file="bosses/tiquandas.xml" interval2="15" margin="700" enabled="no"/> 	
 
 	<!-- Special events (not active) -->
 	<!--raid name="Halloween Hare" file="bosses/halloween.xml" interval2="150" chance="1" margin="60" enabled="no"/-->
