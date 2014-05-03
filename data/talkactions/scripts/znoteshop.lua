@@ -32,6 +32,7 @@ function onSay(cid, words, param)
 					if playerCap >= itemweight then
 						db.query("DELETE FROM `znote_shop_orders` WHERE `id` = " .. q_id .. ";")
 						doPlayerAddItem(cid, q_itemid, q_count)
+						item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, teste descrisao)
 						doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Congratulations! You have recieved ".. q_count .." "..getItemName(q_itemid).."(s)!")
 					else
 						doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "Need more CAP!")
