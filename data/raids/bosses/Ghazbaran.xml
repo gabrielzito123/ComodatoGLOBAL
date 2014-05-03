@@ -8,6 +8,7 @@
   <!--Announcements-->
   <announce delay="1000" type="Event" message="An ancient evil is awakening in the mines beneath Hrodmir." />
   <announce delay="30000" type="Event" message="Demonic entities are entering the mortal realm in the Hrodmir mines." />
+   <announce delay="50000" type="Event" message="INVASAO DE Ghazbaran" />
   <announce delay="60000" type="Event" message="The demonic master has revealed itself in the mines of Hrodmir." />
   <!--Single Spawns-->
   <singlespawn delay="60000" name="Ghazbaran" x="32228" y="31163" z="15" />
