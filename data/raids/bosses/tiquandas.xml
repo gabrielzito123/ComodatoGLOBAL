@@ -3,6 +3,7 @@
   <!--Announcements-->
   <announce delay="1000" type="warning" message="Tiquandas Revenge and Midnight Panther has spot deep in Tiquanda." />
   <announce delay="30000" type="warning" message="Tiquandas Revenge and Midnight Panther has been summoned." />
+  <announce delay="31000" type="warning" message="INVASAO de Tiquandas Revenge and Midnight Panther." />
   <!--Single Spawns-->
   <singlespawn delay="30000" name="Tiquandas Revenge" x="32886" y="32597" z="7" />
   <singlespawn delay="30000" name="Midnight Panther" x="32834" y="32704" z="7" />

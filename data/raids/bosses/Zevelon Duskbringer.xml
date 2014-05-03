@@ -7,6 +7,7 @@
 
   <!--Announcements-->
 <announce delay="1000" type="event" message="Beware of Zevelon Duskbringer!" />
+<announce delay="1100" type="event" message="INVASAO de Zevelon Duskbringer!" />
   <!--Single Spawns-->
   <singlespawn delay="1000" name="Zevelon Duskbringer" x="32754" y="31578" z="11" />
 </raid>
