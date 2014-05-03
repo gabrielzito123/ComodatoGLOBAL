@@ -31,8 +31,11 @@ function onSay(cid, words, param)
 				local itemweight = getItemWeight(q_itemid, q_count)
 					if playerCap >= itemweight then
 						db.query("DELETE FROM `znote_shop_orders` WHERE `id` = " .. q_id .. ";")
-						doPlayerAddItem(cid, q_itemid, q_count)
-						item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, teste descrisao)
+						local item = Player(cid):addItem(q_itemid, q_count)
+						local name = Player(cid):getName()
+						
+						item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, " Comprado por ".. name .." ".. q_count .." "..getItemName(q_itemid).."(s)" )
+						--db.query("UPDATE `znote_shop_logs` SET `player_id`= " .. cid .. " WHERE `id`= " .. q_id .. ";") -- conferir comodato
 						doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Congratulations! You have recieved ".. q_count .." "..getItemName(q_itemid).."(s)!")
 					else
 						doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "Need more CAP!")
