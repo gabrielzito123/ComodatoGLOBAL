@@ -7,15 +7,16 @@ local pos = {
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
 	if(item.actionid == 39511) then
+		doRemoveItem(getTileItemById(pos[item.actionid], 6434).uid, 1)
+		doCreateItem(6434, 1, pos[item.actionid+1])
 
-		doCreateItem(1871, 1, pos[item.actionid+1])
-		doRemoveItem(getTileItemById(pos[item.actionid], 1871).uid, 1)
+
 	end
 	
 	if (item.actionid == 39512) then
 
-		doRemoveItem(getTileItemById(pos[item.actionid], 1871).uid, 1)
-		local item = doCreateItem(1871, 1, pos[item.actionid-1])
+		doRemoveItem(getTileItemById(pos[item.actionid], 6434).uid, 1)
+		local item = doCreateItem(6434, 1, pos[item.actionid-1])
 		doSetItemActionId(item, 39511)
 		local trono =  {x = 32712, y = 32392, z = 13}
 		local p = Player(cid)

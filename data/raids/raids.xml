@@ -11,7 +11,7 @@
 	<raid name="Ferumbras" file="bosses/Ferumbras.xml" interval2="200" chance="100" margin="10" enabled="yes"/> 
 	<raid name="Ghazbaran" file="bosses/Ghazbaran.xml" interval2="500" chance="30" margin="30" enabled="yes"/> 
 	<raid name="Old Widow" file="bosses/The Old Widow.xml" interval2="350" chance="40" margin="20" enabled="yes"/>
-	<raid name="Orshabaal" file="bosses/Orshabaal.xml" interval2="120" chance="50" margin="100" enabled="yes"/> 
+	<raid name="Orshabaal" file="bosses/Orshabaal.xml" interval2="120" chance="50" margin="30" enabled="yes"/> 
 	<raid name="Necropharus" file="bosses/Necropharus.xml" interval2="600" chance="60" margin="10" enabled="yes"/>
 	<raid name="Horned Fox" file="bosses/horned.xml" interval2="400" chance="30" margin="30" enabled="yes"/>
 	<raid name="Tiquandas" file="bosses/tiquandas.xml" interval2="250" chance="30" margin="10" enabled="yes"/> 	
