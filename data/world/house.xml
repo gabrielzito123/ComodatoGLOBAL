@@ -454,7 +454,7 @@
 	<house name="The Market 4 (Shop)" houseid="836" entryx="32635" entryy="31933" entryz="8" rent="1800" townid="3" size="28" />
 	<house name="Granite Guildhall" houseid="837" entryx="32599" entryy="31949" entryz="5" rent="17845" townid="3" size="297" />
 	<house name="Upper Barracks 1" houseid="838" entryx="32605" entryy="31923" entryz="5" rent="210" townid="3" size="1" />
-	<house name="Upper Barracks 13" houseid="850" entryx="32615" entryy="31923" entryz="5" rent="580" townid="3" size="11" />
+	<house name="Upper Barracks 13" houseid="850" entryx="32616" entryy="31923" entryz="5" rent="580" townid="3" size="11" />
 	<house name="Nobility Quarter 4" houseid="851" entryx="32607" entryy="31921" entryz="4" rent="765" townid="3" size="14" />
 	<house name="Nobility Quarter 5" houseid="852" entryx="32612" entryy="31921" entryz="4" rent="765" townid="3" size="14" />
 	<house name="Nobility Quarter 7" houseid="853" entryx="32607" entryy="31914" entryz="4" rent="765" townid="3" size="14" />
